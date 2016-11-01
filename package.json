@@ -4,6 +4,6 @@
   },
   "scripts": {
     "dev": "harp server --port 9001 & browser-sync start --proxy 'localhost:9001' --files '**/*.jade, **/*.less, **/*.json, **/*.js, **/*.coffee' --no-notify",
-    "compile": "harp compile . docs"
+    "compile": "NODE_ENV=production harp compile . docs"
   }
 }
