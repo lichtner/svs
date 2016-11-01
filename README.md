@@ -12,3 +12,5 @@ $ npm run dev
 ```
 
 open browser [http://localhost:3000](http://localhost:3000) and develop with live reload after any change.
+
+for compile use: `npm run compile` 
