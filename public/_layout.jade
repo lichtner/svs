@@ -2,16 +2,16 @@ doctype
 html
   head
     if environment == 'production'
-      base(href='/svs')
+      base(href='/svs/')
     else
       base(href='/')
     title= title
-    link(rel='stylesheet' href='/assets/css/bootstrap.min.css')
-    link(rel='stylesheet' href='/assets/css/main.css')
+    link(rel='stylesheet' href='assets/css/bootstrap.min.css')
+    link(rel='stylesheet' href='assets/css/main.css')
   body
-    != partial('/_common/navbar', {baseurl: baseurl})
+    != partial('/_common/navbar')
     .container
       != yield
 
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-    script(src='/assets/js/bootstrap.min.js')
+    script(src='assets/js/bootstrap.min.js')
